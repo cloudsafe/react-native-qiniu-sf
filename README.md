@@ -1,10 +1,63 @@
-# 修改自官方，git还不熟悉，直接拿rpc替换即可
-https://github.com/qiniudemo/react-native-sdk
+# 修改自官方，git还不熟悉，直接拿rpc替换即可,在尝试npm
+# React Native Qiniu SDK
+修改自官方，官方貌似好久没人维护了，自己修改了下。
+增加了base64上传
+估计好多人会对上传感到疑惑。下面是我的上传代码（smaple）
 
+
+普通文件上传
+```Conf.ACCESS_KEY = "xxx";
+Conf.SECRET_KEY = "xxx";
+
+var putPolicy = new Auth.PutPolicy2(
+    {scope: "intlec"}
+);
+var uptoken = putPolicy.token();
+let formInput = {
+    key :moment().format('YYYY-MM-DD')+"/"+uuid.v4()+".jpg",//七牛没有文件夹，你可以按照这种形式来取文件名，uuid我个人比较喜欢的方式。
+}
+
+Rpc.uploadFile(yourLocalFile, uptoken, formInput).then((res)=>{
+    if(res.status==200){
+      this.setState({
+          uri:"http://这里你绑定的域名/"+formInput.key
+      });
+    }
+});
+```
+#=================================================
+base64上传
+```
+Conf.ACCESS_KEY = "xxx";
+Conf.SECRET_KEY = "xxx";
+
+var putPolicy = new Auth.PutPolicy2(
+    {scope: "intlec"}
+);
+var uptoken = putPolicy.token();
+let formInput = {
+    key :moment().format('YYYY-MM-DD')+"/"+uuid.v4()+".jpg",
+}
+Rpc.uploadBase64(yourBase64Ddata, uptoken, formInput.key).then((res)=>{
+    console.log("数据反馈",res)
+    if(res.status==200){
+        this.setState({
+            uri:"http://域名/"+formInput.key
+        });
+    }
+});
+```
+
+
+
+
+
+
+####一下是官方的说明。
 纯JavaScript实现的Qiniu SDK,
 
 ##安装
-npm i react-native-qiniu  --save
+npm i react-native-qiniu-sf  --save
 
 ##使用方法
 
