@@ -1,7 +1,9 @@
-# 修改自官方，git还不熟悉，直接拿rpc替换即可,在尝试npm
+# 修改自官方，
+#npm install react-native-qiniu-sf --save  
 # React Native Qiniu SDK
 修改自官方，官方貌似好久没人维护了，自己修改了下。
 增加了base64上传
+上传npm多了个gz包，下次再删除。
 估计好多人会对上传感到疑惑。下面是我的上传代码（smaple）
 
 
