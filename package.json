@@ -1,6 +1,6 @@
 {
   "name": "react-native-qiniu",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Qiniu React Native SDK ,A pure javascript implements.",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "Qiniu",
     "SDK"
   ],
-  "author": "buhe",
+  "author": "cloudsafe",
   "license": "MIT",
   "dependencies": {
     "base-64": "^0.1.0",
