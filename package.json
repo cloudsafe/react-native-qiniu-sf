@@ -1,5 +1,5 @@
 {
-  "name": "react-native-qiniu",
+  "name": "react-native-qiniu-sf",
   "version": "0.0.1",
   "description": "Qiniu React Native SDK ,A pure javascript implements.",
   "main": "index.js",
