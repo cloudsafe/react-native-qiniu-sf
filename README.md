@@ -1,4 +1,5 @@
-# React Native Qiniu SDK
+# 修改自官方，git还不熟悉，直接拿rpc替换即可
+https://github.com/qiniudemo/react-native-sdk
 
 纯JavaScript实现的Qiniu SDK,
 
@@ -59,28 +60,3 @@ Rs.stat(<BUCKET>, <KEY)
         });
 ```
 
-##进行中
-
-[RoadMap](https://github.com/qiniu/react-native-sdk/issues/1)
-
-##Release Note
-###0.1.0
-- [x] 上传文件
-- [x] 私有库中文件下载功能
-- [x] Image Ops
-- [x] 资源管理
-
-###0.1.1
-- 重构 upload 方法 (CaveyChan)
-
-###0.2.0
-- es6 style
-
-##Contributor
-- CaveyChan
-- laukey
-
-
-##相关文章
-
-[React Native 文件上传 和 react-native-qiniu](https://medium.com/@bugu1986/react-native-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-%E5%92%8C-react-native-qiniu-4b3f7335090e#.ooux7ospa)
