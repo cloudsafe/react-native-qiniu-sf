@@ -1,6 +1,6 @@
 # 修改自官方，
 #npm install react-native-qiniu-sf --save  
-# React Native Qiniu SDK
+# 建议不要直接把AK和SK写入到JS文件里面，可以跟写后端的对接，直接get过来uptoken
 修改自官方，官方貌似好久没人维护了，自己修改了下。
 增加了base64上传
 上传npm多了个gz包，下次再删除。
@@ -8,6 +8,8 @@
 
 
 普通文件上传
+
+
 ```Conf.ACCESS_KEY = "xxx";
 Conf.SECRET_KEY = "xxx";
 
